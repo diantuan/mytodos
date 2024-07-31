@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+  font-family:Helvetica, sans-serif;
+}
+
+.hidden{
+  display:none;
+}
+
+body{
+  background-color: lavenderblush;
+}
+h1{
+  text-align:center;
+  font-family: Sofia,sans-serif;
+ 
+}
+
+img{
+  display:block;
+  position:absolute;
+  left:10%;
+  top:0;
+  z-index:-1;
+  width:80%;
+  height:100%;
+  margin:0 auto;
+  padding:0;
+  object-fit: cover;
+  opacity: 70%;
+  
+}
+
+#add-task-btn{
+  width: 20%;
+  background-color: lavender;
+  height:30px;
+  border-radius: 10px;
+  transition-duration:.5s;
+  
+}
+#add-task-btn:hover{
+  background-color: honeydew;
+  transform: scale(1.2);
+}
+#add-task-btn:active{
+  background-color: slategray;;
+}
+
+#task-container{
+  text-align:center;
+  
+  
+  
+}
+#task-form{
+  border:2px solid black;
+  padding:20px;
+  width:clamp(300px,50%,400px);
+  margin:10px auto;
+  background-color: lavender;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px slategray;
+  position:relative;
+}
+#task-title, #task-date, #description{
+  display:block;
+  text-align:center;
+  background-color: honeydew;
+  margin:5px auto;
+  width:80%;
+  height:20px;
+  border-radius: 5px;;
+}
+
+#submit-btn{
+  width:40%;
+  border-radius: 5px;
+  background-color: azure;
+  border:3px solid snow;
+  box-shadow:1px 1px 4px slategray;
+  transition-duration: .5s;
+  margin:5px;
+}
+#submit-btn:hover{
+  background-color: snow;
+  transform: scale(1.1);
+
+}
+#submit-btn:active{
+  background-color: slategray;
+}
+
+#close-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  border-radius:5px;
+}
+
+#close-btn:hover{
+  background-color: lightcoral;
+}
+
+#close-btn:active{
+  background-color: slategray;
+}
+
+#tasklist{
+  border:4px solid lightpink;
+  box-shadow: 1px 1px 6px slategray;
+  border-radius: 25px;;
+  margin: 20px auto;
+  width:clamp(300px,50%,400px);
+  padding:10px;
+  background-color: snow;
+  text-align:left;
+
+}
+.edit-delete{
+  width:40%;
+  border-radius: 5px;
+  background-color: azure;
+  border:3px solid snow;
+  box-shadow:1px 1px 4px slategray;
+  transition-duration: .5s;
+  margin:5px;
+}
+
+.edit-delete:hover{
+  background-color: snow;
+  transform: scale(1.1);
+
+}
+.edit-delete:active{
+  background-color: slategray;
+}
+
+#dialogue{
+  width:clamp(300px,50%,400px);
+  border-radius:25px;
+  height:100px;
+  border:none;
+  box-shadow: 1px 1px 6px slategray;
+}
+
+#dialogue button{
+  margin-top:20px;
+
+}
+
